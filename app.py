@@ -1,4 +1,4 @@
-import os
+
 import pickle
 import streamlit as st
 import string
@@ -6,14 +6,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-nltk_data_path = "./nltk_data"
-nltk.data.path.append(nltk_data_path)
-
-if not os.path.exists(nltk_data_path):
-    os.makedirs(nltk_data_path)
-
-nltk.download('punkt', download_dir=nltk_data_path)
-nltk.download('stopwords', download_dir=nltk_data_path)
 
 ps=PorterStemmer()
 
